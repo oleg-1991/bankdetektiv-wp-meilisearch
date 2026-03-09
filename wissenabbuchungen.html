@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BankDetektiv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo">
+          <span class="highlight">Bank</span>Detektiv
+        </a>
+  
+        <!-- Десктоп-меню -->
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+  
+          <div class="nav-dropdown">
+            <button
+              class="nav-link dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="wissen-menu"
+              type="button"
+            >
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+  
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+  
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+  
+        <!-- Кнопка бургера -->
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+  
+        
+      </div>
+    </div>
+    
+  </header>
+  <!-- Затемнение фона для моб.меню -->
+  <div class="mobile-overlay"></div>
+  <!-- Мобильное меню -->
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+  
+
+
+
+
+
+
+  
+  <main>
+    <!-- ARTICLE: Hero + Meta + TOC -->
+    <section class="article">
+      <div class="container">
+        <div class="article__container">
+          <a href="/wissen" class="article__back">← Zurück zum Wissensbereich</a>
+  
+          <h1 class="article__title">
+            Abbuchungen verstehen: Der komplette Guide 2025
+          </h1>
+  
+          <p class="article__lead">
+            Erfahren Sie alles über Bankabbuchungen, SEPA-Lastschriften und wie Sie
+            unbekannte Transaktionen auf Ihrem Kontoauszug sicher identifizieren und handhaben können.
+          </p>
+  
+          <div class="article__meta">
+            <div class="meta__item">
+              <!-- clock -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Lesedauer: 8 Minuten</span>
+            </div>
+          
+            <div class="meta__item">
+              <!-- file-text -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Zuletzt aktualisiert: September 2025</span>
+            </div>
+          
+            <div class="meta__item">
+              <!-- shield -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Expertenwissen</span>
+            </div>
+          </div>
+          
+  
+          <div class="article__toc">
+            <h2 class="article__toc-title">Inhaltsverzeichnis</h2>
+            <ul class="article__toc-list">
+              <li><a href="#was-sind-abbuchungen">1. Was sind Abbuchungen?</a></li>
+              <li><a href="#abbuchungsarten">2. Arten von Abbuchungen</a></li>
+              <li><a href="#abbuchung-identifizieren">3. Unbekannte Abbuchung identifizieren</a></li>
+              <li><a href="#schutz-massnahmen">4. Schutzmaßnahmen</a></li>
+              <li><a href="#rechtliche-grundlagen">5. Rechtliche Grundlagen</a></li>
+              <li><a href="#haeufige-probleme">6. Häufige Probleme und Lösungen</a></li>
+              <li><a href="#faq">7. Häufig gestellte Fragen</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /ARTICLE: Hero + Meta + TOC -->
+
+    <!-- SECTION: Was sind Abbuchungen -->
+<section id="was-sind-abbuchungen" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+
+      <h2 class="article__h2">Was sind Abbuchungen?</h2>
+
+      <p class="article__text">
+        Abbuchungen sind automatische Geldtransfers von Ihrem Bankkonto zu einem anderen Konto.
+        Sie können autorisiert oder unerwartet sein. Prüfen Sie besonders bei unbekannten Abbuchungen
+        die Transaktion zügig und handeln Sie entsprechend.
+      </p>
+
+      <div class="article__grid">
+        <article class="article__card">
+          <!-- Лупа: синий контур (#2563EB), 32×32 -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+          viewBox="0 0 24 24" fill="none"
+          stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          role="img" aria-label="Поиск">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+
+          <h3 class="article__card-title">1. Identifizieren</h3>
+          <p class="article__card-text">Prüfen Sie unbekannte Abbuchungen sofort bei Erhalt des Kontoauszugs.</p>
+        </article>
+
+        <article class="article__card">
+          <svg class="article__icon article__icon--green" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 5c7 0 10 7 10 7s-3 7-10 7S2 12 2 12s3-7 10-7Zm0 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+          </svg>
+          <h3 class="article__card-title">2. Analysieren</h3>
+          <p class="article__card-text">Nutzen Sie <a href="/" class="link">BankDetektiv</a> zur Entschlüsselung.</p>
+        </article>
+
+        <article class="article__card">
+          <svg class="article__icon article__icon--purple" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 12l2 2 4-4M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <h3 class="article__card-title">3. Handeln</h3>
+          <p class="article__card-text">Treffen Sie die richtige Entscheidung auf Basis der Informationen.</p>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="abbuchungsarten" class="article__container">
+  <div class="container">
+
+    <h2 class="article__h2">Arten von Abbuchungen im Überblick</h2>
+
+    <div class="table-card">
+      <div class="table-scroll">
+        <table class="abb__table">
+          <thead>
+            <tr>
+              <th>Abbuchungsart</th>
+              <th>Häufigkeit</th>
+              <th>Risiko</th>
+              <th>Beschreibung</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="abb__type">SEPA-Lastschrift</td>
+              <td>Sehr häufig</td>
+              <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+              <td class="abb__desc">Autorisierte Abbuchung mit Mandat</td>
+            </tr>
+            <tr>
+              <td class="abb__type">Kreditkarten-Sammelbuchung</td>
+              <td>Häufig</td>
+              <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+              <td class="abb__desc">Monatliche Kreditkartenumsätze</td>
+            </tr>
+            <tr>
+              <td class="abb__type">Dauerauftrag</td>
+              <td>Häufig</td>
+              <td><span class="risk-badge risk-badge--verylow">Sehr niedrig</span></td>
+              <td class="abb__desc">Selbst eingerichtete Überweisungen</td>
+            </tr>
+            <tr>
+              <td class="abb__type">Unbekannte Lastschrift</td>
+              <td>Selten</td>
+              <td><span class="risk-badge risk-badge--high">Hoch</span></td>
+              <td class="abb__desc">Nicht autorisierte Abbuchung</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+
+
+
+<!-- SECTION: So identifizieren Sie unbekannte Abbuchungen -->
+<section id="abbuchung-identifizieren" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+
+      <h2 class="article__h2">So identifizieren Sie unbekannte Abbuchungen</h2>
+
+      <!-- Жёлтый алерт -->
+      <div class="notice notice--yellow">
+        <svg class="notice__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M12 7v6m0 4h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="notice__body">
+          <div class="notice__title">Wichtiger Hinweis</div>
+          <p class="notice__text">
+            Prüfen Sie Ihre Kontoauszüge regelmäßig und reagieren Sie schnell auf unbekannte Abbuchungen.
+            Je früher Sie handeln, desto besser können Sie Ihr Geld zurückholen.
+          </p>
+        </div>
+      </div>
+
+      <h3 class="article__h3">Schritt-für-Schritt Anleitung</h3>
+
+
+      <!-- Шаги -->
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div class="step__content">
+            <div class="step__title">Kontoauszug systematisch prüfen</div>
+            <p class="step__text">Gehen Sie alle Transaktionen durch und markieren Sie unbekannte Abbuchungen.
+              Achten Sie besonders auf ungewöhnliche Firmennamen oder Beträge.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__num">2</div>
+          <div class="step__content">
+            <div class="step__title">Firmennamen recherchieren</div>
+            <p class="step__text">Nutzen Sie unseren <a href="/" class="link">BankDetektiv-Service</a> oder recherchieren
+              Sie online nach dem Firmennamen der Abbuchung.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__num">3</div>
+          <div class="step__content">
+            <div class="step__title">Belege sammeln</div>
+            <p class="step__text">Dokumentieren Sie alle relevanten Informationen: Datum, Betrag, Verwendungszweck
+              und eventuelle Mandate oder Verträge.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step__num">4</div>
+          <div class="step__content">
+            <div class="step__title">Sofortmaßnahmen einleiten</div>
+            <p class="step__text">Bei unberechtigten Abbuchungen kontaktieren Sie sofort Ihre Bank für eine
+              Lastschriftrückgabe. Mehr dazu in unserem <a href="/wissen/sicherheit" class="link">Sicherheits-Guide</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="schutz-massnahmen" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Präventive Schutzmaßnahmen</h2>
+
+      <div class="protect__grid">
+        <div class="protect__card">
+          <h3 class="protect__title">Regelmäßige Kontrolle</h3>
+          <ul class="protect__list">
+            <li class="protect__item">Wöchentliche Kontoprüfung</li>
+            <li class="protect__item">Push-Benachrichtigungen aktivieren</li>
+            <li class="protect__item">Unbekannte Transaktionen sofort melden</li>
+          </ul>
+        </div>
+
+        <div class="protect__card">
+          <h3 class="protect__title">Mandate verwalten</h3>
+          <ul class="protect__list">
+            <li class="protect__item">Liste aller SEPA-Mandate führen</li>
+            <li class="protect__item">Ungenutzte Mandate widerrufen</li>
+            <li class="protect__item">Kopien aller Einzugsermächtigungen aufbewahren</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="rechtliche-grundlagen" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Rechtliche Grundlagen und Ihre Rechte</h2>
+
+      <div class="legal__box">
+        <h3 class="legal__title">Ihre Rechte bei Lastschriften</h3>
+        <ul class="legal__list">
+          <li><strong>8-Wochen-Frist:</strong> Autorisierte Lastschriften können binnen 8 Wochen zurückgegeben werden</li>
+          <li><strong>13-Monate-Frist:</strong> Nicht autorisierte Lastschriften können bis zu 13 Monate zurückgegeben werden</li>
+          <li><strong>Kostenfrei:</strong> Die erste Rückgabe ist in der Regel kostenfrei</li>
+          <li><strong>Beweislast:</strong> Bei Streitfällen muss das Unternehmen ein gültiges Mandat vorweisen</li>
+        </ul>
+      </div>
+      
+
+      <p class="legal__note">
+        Weitere rechtliche Informationen finden Sie in unserem
+        <a href="/wissen/bankgebuehren" class="link">Bankgebühren-Guide</a>
+        und in unseren <a href="/agb" class="link">Allgemeinen Geschäftsbedingungen</a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="problems">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="problems__title">Häufige Probleme und Lösungsansätze</h2>
+
+      <div class="problem__card">
+        <div class="problem__name">Problem: Doppelte Abbuchung</div>
+        <p class="problem__desc">Ein Betrag wurde zweimal von Ihrem Konto abgebucht.</p>
+        <p class="problem__solution"><b>Lösung:</b> Kontaktieren Sie sowohl Ihre Bank als auch das abbuchende Unternehmen. Eine Lastschriftrückgabe ist meist problemlos möglich.</p>
+      </div>
+
+      <div class="problem__card">
+        <div class="problem__name">Problem: Abbuchung trotz Kündigung</div>
+        <p class="problem__desc">Ein Unternehmen bucht weiter ab, obwohl Sie gekündigt haben.</p>
+        <p class="problem__solution"><b>Lösung:</b> SEPA-Mandat schriftlich widerrufen und Lastschrift zurückgeben lassen. Weitere Schritte siehe
+          <a href="/wissen/sicherheit" class="problem__link">Sicherheits-Guide</a>.
+        </p>
+      </div>
+
+      <div class="problem__card">
+        <div class="problem__name">Problem: Unbekannter Firmenname</div>
+        <p class="problem__desc">Die Abbuchung stammt von einem unbekannten Unternehmen.</p>
+        <p class="problem__solution"><b>Lösung:</b> Nutzen Sie unseren
+          <a href="/" class="problem__link">kostenlosen BankDetektiv-Service</a> zur Identifikation des Unternehmens.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- SECTION: FAQ -->
+<section id="faq" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Häufig gestellte Fragen (FAQ)</h2>
+
+      <div class="faq-acc">
+        <details class="faq-acc__item">
+
+          <summary class="faq-acc__summary"><span class="faq__left">
+              <!-- иконка вопроса -->
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+              Wie erkenne ich eine unbekannte Abbuchung?
+            </span>
+          </summary>
+
+          <div class="faq-acc__answer">
+            Unbekannte Abbuchungen erscheinen oft mit kryptischen Firmennamen, ungewöhnlichen Beträgen oder Transaktionen, die Sie nicht zuordnen können. Prüfen Sie regelmäßig Ihre Kontoauszüge und nutzen Sie Tools wie BankDetektiv zur Identifikation.
+          </div>
+        </details>
+
+        <details class="faq-acc__item">
+          
+          <summary class="faq-acc__summary"><span class="faq__left">
+              <!-- иконка вопроса -->
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+              Was kann ich gegen unberechtigte Abbuchungen tun?
+            </span>
+          </summary>
+          
+          <div class="faq-acc__answer">
+            Bei unberechtigten SEPA-Lastschriften haben Sie 8 Wochen Zeit, um diese bei Ihrer Bank zurückzugeben. Ohne gültiges Mandat sogar bis zu 13 Monate. Kontaktieren Sie sofort Ihre Bank und dokumentieren Sie den Vorfall.
+          </div>
+        </details>
+
+        <details class="faq-acc__item">
+          <summary class="faq-acc__summary"><span class="faq__left">
+            <!-- иконка вопроса -->
+            <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+              <path d="M12 17h.01"></path>
+            </svg>
+            Wie lange dauert eine Lastschriftrückgabe?
+          </span>
+        </summary>
+          <div class="faq-acc__answer">
+            Eine Lastschriftrückgabe dauert in der Regel 1-3 Bankarbeitstage. Der Betrag wird Ihrem Konto gutgeschrieben, sobald die Rückgabe bearbeitet wurde.
+          </div>
+        </details>
+        <details class="faq-acc__item">
+          <summary class="faq-acc__summary"><span class="faq__left">
+            <!-- иконка вопроса -->
+            <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+              <path d="M12 17h.01"></path>
+            </svg>
+            Kann ich SEPA-Mandate widerrufen?
+          </span>
+        </summary>
+          <div class="faq-acc__answer">
+            Ja, SEPA-Mandate können jederzeit schriftlich beim Zahlungsempfänger oder bei Ihrer Bank widerrufen werden. Der Widerruf sollte schriftlich erfolgen und ist sofort wirksam.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section id="related" class="article-sec related">
+  <div class="container">
+    <div class="article__container">
+
+      <div class="related-box">
+
+        <h2 class="article__h2">Weiterführende Artikel</h2>
+
+        <div class="related__grid">
+          <a href="/wissen/sicherheit" class="related__card">
+            <h3 class="related__title">Sicherheit beim Online-Banking</h3>
+            <p class="related__desc">Schützen Sie sich vor Betrug und unautorisierten Zugriffen</p>
+          </a>
+
+          <a href="/wissen/bankgebuehren" class="related__card">
+            <h3 class="related__title">Bankgebühren verstehen</h3>
+            <p class="related__desc">Transparenz bei Kosten und Gebühren Ihrer Bank</p>
+          </a>
+
+          <a href="/wissen/haeufige-abbuchungen" class="related__card">
+            <h3 class="related__title">Häufige Abbuchungen erklärt</h3>
+            <p class="related__desc">Die häufigsten Abbuchungen und ihre Bedeutung</p>
+          </a>
+
+          <a href="/kontakt" class="related__card">
+            <h3 class="related__title">Persönliche Beratung</h3>
+            <p class="related__desc">Kontaktieren Sie unsere Experten</p>
+          </a>
+        </div>
+
+    </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+        <div class="footer__container">
+        
+        <div class="footer__column">
+            <a href="/" class="footer__logo">
+            <span class="highlight">Bank</span>Detektiv
+            </a>
+            <p class="footer__desc">
+            BankDetektiv hilft dir, unbekannte<br>
+            Abbuchungen auf deinem Kontoauszug<br>
+            zu identifizieren und zu verstehen.
+            </p>
+            <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank">
+            www.wasistdasfüreineabbuchung.de
+            </a>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Links</h4>
+            <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Wissen</h4>
+            <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Rechtliches</h4>
+            <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+            </ul>
+        </div>
+        
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+            <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank">whatsthatcharge.com</a></p>
+        </div>
+
+        
+
+    </div>
+  </footer>
+  
+  
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>

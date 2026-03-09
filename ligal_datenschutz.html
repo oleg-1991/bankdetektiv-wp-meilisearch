@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – BankDetektiv</title>
+  <meta name="description" content="BankDetektiv – weil du wissen solltest, wofür du zahlst. Wir machen Schluss mit Fragezeichen auf dem Kontoauszug." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo">
+          <span class="highlight">Bank</span>Detektiv
+        </a>
+
+        <!-- Десктоп-меню -->
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+
+          <div class="nav-dropdown">
+            <button
+              class="nav-link dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="wissen-menu"
+              type="button"
+            >
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+
+        <!-- Бургер -->
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Затемнение фона для моб.меню -->
+  <div class="mobile-overlay"></div>
+  <!-- Мобильное меню -->
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+
+
+  <main>
+    <main>
+      <section class="legalpage legalpage--datenschutz">
+        <div class="container">
+          <div class="legalpage__container">
+            <h1 class="legalpage__title">Datenschutzerklärung</h1>
+            <p class="legalpage__lead">Die folgenden Hinweise geben einen Überblick darüber, was mit personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
+    
+            <nav class="legalpage__toc">
+              <h2 class="legalpage__toc-title">Inhalt</h2>
+              <ol class="legalpage__toc-list">
+                <li><a href="#d1">Datenschutz auf einen Blick</a></li>
+                <li><a href="#d2">Allgemeine Hinweise und Pflichtinformationen</a></li>
+                <li><a href="#d3">Datenerfassung auf unserer Website</a></li>
+                <li><a href="#d4">Analyse-Tools</a></li>
+                <li><a href="#d5">Ihre Rechte</a></li>
+                <li><a href="#d6">Kontakt</a></li>
+              </ol>
+            </nav>
+    
+            <section id="d1" class="legalpage__section">
+              <h2 class="legalpage__h2">1. Datenschutz auf einen Blick</h2>
+              <h3 class="legalpage__h3">Allgemeine Hinweise</h3>
+              <p>Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber.</p>
+            </section>
+    
+            <section id="d2" class="legalpage__section">
+              <h2 class="legalpage__h2">2. Allgemeine Hinweise und Pflichtinformationen</h2>
+              <h3 class="legalpage__h3">Verantwortliche Stelle</h3>
+              <address class="legalpage__address">
+                BankDetektiv GmbH<br>
+                Musterstraße 123<br>
+                12345 Berlin<br>
+                E-Mail: info@bankdetektiv.de
+              </address>
+              <h3 class="legalpage__h3">Rechtsgrundlagen</h3>
+              <p>Die Verarbeitung personenbezogener Daten erfolgt auf Grundlage der DSGVO, insbesondere Art. 6 Abs. 1 lit. a, b und f.</p>
+            </section>
+    
+            <section id="d3" class="legalpage__section">
+              <h2 class="legalpage__h2">3. Datenerfassung auf unserer Website</h2>
+              <h3 class="legalpage__h3">Server-Log-Dateien</h3>
+              <p>Der Provider erhebt und speichert automatisch Informationen in sogenannten Server-Log-Dateien, die Ihr Browser automatisch übermittelt.</p>
+              <h3 class="legalpage__h3">Cookies</h3>
+              <p>Diese Website verwendet teilweise Cookies. Cookies richten auf Ihrem Gerät keinen Schaden an und enthalten keine Viren. Sie dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+              <h3 class="legalpage__h3">Kontaktformular</h3>
+              <p>Wenn Sie uns über das Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen gespeichert.</p>
+            </section>
+    
+            <section id="d4" class="legalpage__section">
+              <h2 class="legalpage__h2">4. Analyse-Tools</h2>
+              <p>Sofern Analyse-Dienste eingesetzt werden, erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Details werden an dieser Stelle ergänzt.</p>
+            </section>
+    
+            <section id="d5" class="legalpage__section">
+              <h2 class="legalpage__h2">5. Ihre Rechte</h2>
+              <ul class="legalpage__list">
+                <li>Auskunft über Ihre gespeicherten Daten</li>
+                <li>Berichtigung unrichtiger Daten</li>
+                <li>Löschung Ihrer Daten</li>
+                <li>Einschränkung der Verarbeitung</li>
+                <li>Datenübertragbarkeit</li>
+                <li>Widerspruch gegen die Verarbeitung</li>
+              </ul>
+            </section>
+    
+            <section id="d6" class="legalpage__section">
+              <h2 class="legalpage__h2">6. Kontakt</h2>
+              <p>Für Anfragen zum Datenschutz wenden Sie sich an die oben genannte verantwortliche Stelle.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+  </main>
+  
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__container">
+        <div class="footer__column">
+          <a href="/" class="footer__logo">
+            <span class="highlight">Bank</span>Detektiv
+          </a>
+          <p class="footer__desc">
+            BankDetektiv hilft dir, unbekannte<br>
+            Abbuchungen auf deinem Kontoauszug<br>
+            zu identifizieren und zu verstehen.
+          </p>
+          <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank" rel="noopener noreferrer">
+            www.wasistdasfüreineabbuchung.de
+          </a>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Links</h4>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Wissen</h4>
+          <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Rechtliches</h4>
+          <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+        <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank" rel="noopener noreferrer">whatsthatcharge.com</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BankDetektiv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo">
+          <span class="highlight">Bank</span>Detektiv
+        </a>
+  
+        <!-- Десктоп-меню -->
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+  
+          <div class="nav-dropdown">
+            <button
+              class="nav-link dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="wissen-menu"
+              type="button"
+            >
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+  
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+  
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+  
+        <!-- Кнопка бургера -->
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+  
+        
+      </div>
+    </div>
+    
+  </header>
+  <!-- Затемнение фона для моб.меню -->
+  <div class="mobile-overlay"></div>
+  <!-- Мобильное меню -->
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+
+  <!-- ARTICLE: Hero + Meta + TOC -->
+<section id="hero" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+
+      <a href="/wissen" class="backlink">← Zurück zum Wissensbereich</a>
+
+      <h1 class="article__h1">Bankgebühren verstehen: Der praktische Guide 2025</h1>
+      <p class="article__text">
+        Überblick über die häufigsten Bankgebühren in Deutschland, wie sie entstehen
+        und wie du sie vermeiden oder reduzieren kannst.
+      </p>
+
+      <!-- Meta row -->
+      <div class="article__meta">
+            <div class="meta__item">
+              <!-- clock -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Lesedauer: 8 Minuten</span>
+            </div>
+          
+            <div class="meta__item">
+              <!-- file-text -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Zuletzt aktualisiert: September 2025</span>
+            </div>
+          
+            <div class="meta__item">
+              <!-- shield -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Expertenwissen</span>
+            </div>
+          </div>
+
+      <!-- Inhaltsverzeichnis -->
+      <!-- TOC -->
+    <div class="toc">
+      <h2 class="article__h2">Inhaltsverzeichnis</h2>
+      <ul class="toc__list">
+        <li class="toc__item"><a href="#gebuehren-ueberblick">Gebühren im Überblick</a></li>
+        <li class="toc__item"><a href="#typische-gebuehren">Typische Gebühren (Tabelle)</a></li>
+        <li class="toc__item"><a href="#vermeiden-senken">Gebühren vermeiden & senken</a></li>
+        <li class="toc__item"><a href="#rechtliches">Rechtliche Hinweise</a></li>
+        <li class="toc__item"><a href="#faq">Häufig gestellte Fragen</a></li>
+      </ul>
+    </div>
+
+
+    </div>
+  </div>
+</section>
+<!-- /ARTICLE: Hero + Meta + TOC -->
+
+
+
+
+
+
+
+
+<!-- ===================================================== -->
+<!-- Gebühren im Überblick -->
+<section id="gebuehren-ueberblick" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Gebühren im Überblick</h2>
+      <p class="article__text">
+        Banken erheben unterschiedliche Entgelte – je nach Kontomodell, Karte und Nutzung.
+        Die wichtigsten Kategorien findest du hier kurz erklärt.
+      </p>
+
+      <div class="article__grid">
+        <article class="article__card">
+          <!-- wallet -->
+          <svg class="article__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="6" width="18" height="12" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M21 10h-6a2 2 0 0 0 0 4h6" fill="none" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <h3 class="article__card-title">Kontoführung</h3>
+          <p class="article__card-text">Monatliche Grundgebühr fürs Girokonto – oft abhängig vom Geldeingang.</p>
+        </article>
+
+        <article class="article__card">
+          <!-- credit-card -->
+          <svg class="article__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="2" y="5" width="20" height="14" rx="2" ry="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" stroke-width="2"/>
+          </svg>
+          <h3 class="article__card-title">Karten & Bargeld</h3>
+          <p class="article__card-text">Jahresgebühren für Debit/Kreditkarte, Abhebungen am Fremdautomaten u. Ä.</p>
+        </article>
+
+        <article class="article__card">
+          <!-- arrows -->
+          <svg class="article__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 7h10M7 7l3-3M7 7l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <path d="M17 17H7m10 0l-3-3m3 3l-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <h3 class="article__card-title">Überweisungen & Service</h3>
+          <p class="article__card-text">Echtzeit-Überweisungen, Papierauszüge, Filialservice und Sonderleistungen.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- Typische Gebühren (Tabelle) -->
+<section id="typische-gebuehren" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Typische Gebühren (Tabelle)</h2>
+      <p class="article__text">Orientierungswerte – genaue Preise stehen im Preisaushang deiner Bank.</p>
+
+      <div class="table-card">
+        <div class="table-scroll">
+          <table class="abb__table">
+            <thead>
+              <tr>
+                <th>Gebühr</th>
+                <th>Typ</th>
+                <th>Betrag / Spanne</th>
+                <th>Hinweise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="abb__type">Kontoführungsgebühr</td>
+                <td>Laufend (monatlich)</td>
+                <td>0–12&nbsp;€ / Monat</td>
+                <td class="abb__desc">Oft kostenlos bei aktivem Gehaltseingang oder jungem Konto.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Debitkarte (Girocard)</td>
+                <td>Jahresgebühr</td>
+                <td>0–15&nbsp;€ / Jahr</td>
+                <td class="abb__desc">Teil vieler Kontopakete; Ersatzkarte kann extra kosten.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Kreditkarte</td>
+                <td>Jahresgebühr</td>
+                <td>0–60&nbsp;€ / Jahr</td>
+                <td class="abb__desc">Premiumkarten deutlich teurer, oft mit Zusatzleistungen.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Bargeld am Fremdautomaten</td>
+                <td>Transaktion</td>
+                <td>2–6&nbsp;€ / Vorgang</td>
+                <td class="abb__desc">Vermeiden durch bankeigene Automaten / Partnernetz.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Echtzeit-Überweisung</td>
+                <td>Transaktion</td>
+                <td>0–1,50&nbsp;€</td>
+                <td class="abb__desc">Bei vielen Direktbanken kostenlos, sonst Aufpreis.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Dispozinsen</td>
+                <td>Zinsen p. a.</td>
+                <td>8–14&nbsp;%</td>
+                <td class="abb__desc">Nur im Notfall nutzen; Alternativen prüfen.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Papier-Kontoauszug</td>
+                <td>Service</td>
+                <td>0,50–2,50&nbsp;€</td>
+                <td class="abb__desc">Digital im Online-Banking meist kostenlos.</td>
+              </tr>
+              <tr>
+                <td class="abb__type">Auslandseinsatz Karte</td>
+                <td>Prozentual</td>
+                <td>0–2,5&nbsp;%</td>
+                <td class="abb__desc">Je nach Währung/Land; Reisekonditionen prüfen.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- Gebühren vermeiden & senken -->
+<section id="vermeiden-senken" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Gebühren vermeiden &amp; senken</h2>
+      <p class="article__text">Mit ein paar Routinen reduzierst du viele Kosten dauerhaft.</p>
+
+      <div class="protect__grid">
+        <div class="protect__card">
+          <h3 class="protect__title">Passendes Kontomodell</h3>
+          <ul class="protect__list">
+            <li class="protect__item">Konten mit Gratisführung bei Geldeingang wählen</li>
+            <li class="protect__item">Preisaktionen &amp; Neukundenboni nutzen</li>
+            <li class="protect__item">Zusatzpakete abwählen, wenn unnötig</li>
+          </ul>
+        </div>
+        <div class="protect__card">
+          <h3 class="protect__title">Karten clever einsetzen</h3>
+          <ul class="protect__list">
+            <li class="protect__item">Abheben im Partnernetz / Supermarkt</li>
+            <li class="protect__item">Gebührenfreie Kreditkarte für Reisen</li>
+            <li class="protect__item">Fremdwährungsgebühren vorher prüfen</li>
+          </ul>
+        </div>
+        <div class="protect__card">
+          <h3 class="protect__title">Digital statt Papier</h3>
+          <ul class="protect__list">
+            <li class="protect__item">Elektronische Kontoauszüge aktivieren</li>
+            <li class="protect__item">Daueraufträge &amp; SEPA-Mandate online verwalten</li>
+            <li class="protect__item">Push-Benachrichtigungen einschalten</li>
+          </ul>
+        </div>
+        <div class="protect__card">
+          <h3 class="protect__title">Dispo vermeiden</h3>
+          <ul class="protect__list">
+            <li class="protect__item">Finanzpuffer einplanen</li>
+            <li class="protect__item">Kurzfristig günstiger Ratenkredit statt Dispo</li>
+            <li class="protect__item">Budget-Alerts im Banking nutzen</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- Rechtliche Hinweise -->
+<section id="rechtliches" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Rechtliche Hinweise</h2>
+
+      <div class="legal__box">
+        <h3 class="legal__title">Wichtige Grundsätze</h3>
+        <ul class="legal__list">
+          <li><strong>Kostenfrei:</strong> Basisfunktionen (z. B. Kartenzahlung in EUR) sind oft kostenlos – Ausnahmen beachten.</li>
+          <li><strong>Transparenz:</strong> Alle Entgelte müssen im Preisaushang klar aufgeführt sein.</li>
+          <li><strong>Zustimmung:</strong> Gebührenänderungen erfordern deine Zustimmung (AGB/Preisinfo prüfen).</li>
+          <li><strong>Informationspflicht:</strong> Banken müssen rechtzeitig über Änderungen informieren.</li>
+          <li><strong>Wechselrecht:</strong> Du kannst das Konto kündigen und zu einem günstigeren Anbieter wechseln.</li>
+        </ul>
+      </div>
+
+      <p class="article__text">
+        Verbindlich sind stets die Preis- und Leistungsverzeichnisse deiner Bank. Im Zweifel wende dich
+        an den Support oder eine Verbraucherzentrale.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================== -->
+<!-- FAQ -->
+<section id="faq" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+      <h2 class="article__h2">Häufig gestellte Fragen</h2>
+
+      <div class="faq-acc">
+        <details class="faq-acc__item">
+          <summary class="faq-acc__summary">
+            <span class="faq__left">
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+              Warum zahle ich Kontoführungsgebühren?
+            </span>
+          </summary>
+          <div class="faq-acc__answer">
+            Sie decken die laufenden Kosten der Bank. Viele Institute bieten jedoch Gratis-Modelle bei
+            regelmäßigem Gehaltseingang oder für junge Kunden an.
+          </div>
+        </details>
+
+        <details class="faq-acc__item">
+          <summary class="faq-acc__summary">
+            <span class="faq__left">
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+              Sind Echtzeit-Überweisungen immer kostenpflichtig?
+            </span>
+          </summary>
+          <div class="faq-acc__answer">
+            Nein. Einige Banken verlangen ein Entgelt, bei vielen Direktbanken sind sie kostenfrei.
+            Der Preisaushang deiner Bank ist entscheidend.
+          </div>
+        </details>
+
+        <details class="faq-acc__item">
+          <summary class="faq-acc__summary">
+            <span class="faq__left">
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+              Wie spare ich bei Bargeldabhebungen?
+            </span>
+          </summary>
+          <div class="faq-acc__answer">
+            Hebe im Automatenverbund deiner Bank ab oder nutze Supermarkt-Cashback. Fremdautomaten möglichst meiden.
+          </div>
+        </details>
+
+        <details class="faq-acc__item">
+          <summary class="faq-acc__summary">
+            <span class="faq__left">
+              <svg class="faq__icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+                <path d="M12 17h.01"></path>
+              </svg>
+              Lohnt sich eine Kreditkarte mit Jahresgebühr?
+            </span>
+          </summary>
+          <div class="faq-acc__answer">
+            Wenn du Reise-Versicherungen, Loungezugang oder Cashback intensiv nutzt – ja. Sonst reicht oft ein
+            kostenloses Kartenmodell.
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+        <div class="footer__container">
+        
+        <div class="footer__column">
+            <a href="/" class="footer__logo">
+            <span class="highlight">Bank</span>Detektiv
+            </a>
+            <p class="footer__desc">
+            BankDetektiv hilft dir, unbekannte<br>
+            Abbuchungen auf deinem Kontoauszug<br>
+            zu identifizieren und zu verstehen.
+            </p>
+            <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank">
+            www.wasistdasfüreineabbuchung.de
+            </a>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Links</h4>
+            <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Wissen</h4>
+            <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Rechtliches</h4>
+            <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+            </ul>
+        </div>
+        
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+            <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank">whatsthatcharge.com</a></p>
+        </div>
+
+        
+
+    </div>
+  </footer>
+  
+  
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>

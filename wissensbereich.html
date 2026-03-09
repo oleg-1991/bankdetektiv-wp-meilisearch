@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BankDetektiv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo">
+          <span class="highlight">Bank</span>Detektiv
+        </a>
+  
+        <!-- Десктоп-меню -->
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+  
+          <div class="nav-dropdown">
+            <button
+              class="nav-link dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="wissen-menu"
+              type="button"
+            >
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+  
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+  
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+  
+        <!-- Кнопка бургера -->
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+  
+        
+      </div>
+    </div>
+    
+  </header>
+  <!-- Затемнение фона для моб.меню -->
+  <div class="mobile-overlay"></div>
+  <!-- Мобильное меню -->
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+  
+
+
+
+<main>
+
+  <!-- HERO -->
+<section id="wissen-hero" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+
+
+      <div class="wissen__head">
+        <h1 class="wissen__title">Wissensbereich</h1>
+        <p class="wissen__subtitle">
+          Erweitere dein Wissen über Bankabbuchungen, Gebühren und Online-Banking-Sicherheit.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KATEGORIEN -->
+<section id="wissen-kategorien" class="article-sec">
+  <div class="container">
+    <div class="article__container">
+
+      <div class="article__grid article__grid--2">
+        <!-- Abbuchungen verstehen -->
+        <a class="article__card article__card--link" href="/wissen/abbuchungen">
+          <svg class="article__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor"></circle>
+            <path d="M9.09 9a3 3 0 1 1 5.82 1c0 2-3 2-3 4"></path>
+            <path d="M12 17h.01"></path>
+          </svg>
+          <h3 class="article__card-title">Abbuchungen verstehen</h3>
+          <p class="article__card-text">
+            Lerne, wie du unbekannte Transaktionen auf deinem Kontoauszug identifizierst und verstehst.
+          </p>
+        </a>
+
+        <!-- Bankgebühren Guide -->
+        <a class="article__card article__card--link" href="/wissen/bankgebuehren">
+          <svg class="article__icon article__icon--green" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="4" y="6" width="16" height="12" rx="2" ry="2" fill="none" stroke="currentColor"></rect>
+            <line x1="8" y1="10" x2="16" y2="10" stroke="currentColor"></line>
+            <line x1="8" y1="14" x2="13" y2="14" stroke="currentColor"></line>
+          </svg>
+          <h3 class="article__card-title">Bankgebühren Guide</h3>
+          <p class="article__card-text">
+            Alles über versteckte Kosten, Gebühren und wie du sie vermeiden kannst.
+          </p>
+        </a>
+
+        <!-- Sicherheit beim Banking -->
+        <a class="article__card article__card--link" href="/wissen/sicherheit">
+          <svg class="article__icon article__icon--purple" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V7l-8-3-8 3v5c0 6 8 10 8 10z" fill="none" stroke="currentColor"></path>
+            <path d="M9.5 12.5l2 2 3.5-3.5" fill="none" stroke="currentColor"></path>
+          </svg>
+          <h3 class="article__card-title">Sicherheit beim Banking</h3>
+          <p class="article__card-text">
+            Wichtige Tipps für sicheres Online-Banking und Schutz vor Betrug.
+          </p>
+        </a>
+
+        <!-- Häufige Abbuchungen -->
+        <a class="article__card article__card--link" href="/wissen/haeufige-abbuchungen">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="article__icon" data-lov-id="src/pages/Wissen.tsx:60:20" data-lov-name="kategorie.icon" data-component-path="src/pages/Wissen.tsx" data-component-line="60" data-component-file="Wissen.tsx" data-component-name="kategorie.icon" data-component-content="%7B%22className%22%3A%22h-8%20w-8%22%7D"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path></svg>
+
+          
+          <h3 class="article__card-title">Häufige Abbuchungen</h3>
+          <p class="article__card-text">
+            Die häufigsten Abbuchungen erklärt – Herkunft und Bedeutung.
+          </p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+
+        <div class="footer__container">
+        
+        <div class="footer__column">
+            <a href="/" class="footer__logo">
+            <span class="highlight">Bank</span>Detektiv
+            </a>
+            <p class="footer__desc">
+            BankDetektiv hilft dir, unbekannte<br>
+            Abbuchungen auf deinem Kontoauszug<br>
+            zu identifizieren und zu verstehen.
+            </p>
+            <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank">
+            www.wasistdasfüreineabbuchung.de
+            </a>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Links</h4>
+            <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Wissen</h4>
+            <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer__column">
+            <h4 class="footer__heading">Rechtliches</h4>
+            <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+            </ul>
+        </div>
+        
+        </div>
+
+        <div class="footer__bottom">
+            <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+            <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank">whatsthatcharge.com</a></p>
+        </div>
+
+        
+
+    </div>
+  </footer>
+  
+  
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>

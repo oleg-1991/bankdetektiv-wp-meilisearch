@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – BankDetektiv</title>
+  <meta name="description" content="BankDetektiv – weil du wissen solltest, wofür du zahlst. Wir machen Schluss mit Fragezeichen auf dem Kontoauszug." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo">
+          <span class="highlight">Bank</span>Detektiv
+        </a>
+
+        <!-- Десктоп-меню -->
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+
+          <div class="nav-dropdown">
+            <button
+              class="nav-link dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="wissen-menu"
+              type="button"
+            >
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+
+        <!-- Бургер -->
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Затемнение фона для моб.меню -->
+  <div class="mobile-overlay"></div>
+  <!-- Мобильное меню -->
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+
+
+  <main>
+    <main>
+      <section class="legalpage legalpage--agb">
+        <div class="container">
+          <div class="legalpage__container">
+            <h1 class="legalpage__title">Allgemeine Geschäftsbedingungen</h1>
+            <p class="legalpage__lead">Diese Bedingungen regeln die Nutzung von BankDetektiv.</p>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">1. Geltungsbereich</h2>
+              <p>Die AGB gelten für alle Verträge und Leistungen zwischen BankDetektiv und Nutzern der Website.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">2. Leistungen</h2>
+              <p>BankDetektiv stellt Informationen zu Abbuchungen bereit. Es handelt sich nicht um Rechts- oder Finanzberatung.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">3. Nutzung der Website</h2>
+              <p>Die Nutzung ist nur im Rahmen der gesetzlichen Bestimmungen gestattet. Unzulässig sind Handlungen, die die Funktionsfähigkeit der Website beeinträchtigen.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">4. Registrierung und Konten</h2>
+              <p>Sofern Konten angeboten werden, sind Nutzer verpflichtet, Zugangsdaten vertraulich zu behandeln.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">5. Preise und Zahlungsbedingungen</h2>
+              <p>Grundfunktionen sind kostenlos. Kostenpflichtige Zusatzfunktionen werden gesondert gekennzeichnet.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">6. Haftung</h2>
+              <p>BankDetektiv haftet für Vorsatz und grobe Fahrlässigkeit. Bei einfacher Fahrlässigkeit nur für Schäden aus der Verletzung wesentlicher Vertragspflichten.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">7. Datenschutz</h2>
+              <p>Informationen zur Verarbeitung personenbezogener Daten finden Sie in der <a href="/datenschutz" class="legalpage__link">Datenschutzerklärung</a>.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">8. Laufzeit und Kündigung</h2>
+              <p>Sofern ein Vertragsverhältnis besteht, kann dieses von beiden Parteien mit angemessener Frist gekündigt werden, sofern nicht abweichend geregelt.</p>
+            </section>
+    
+            <section class="legalpage__section">
+              <h2 class="legalpage__h2">9. Schlussbestimmungen</h2>
+              <p>Es gilt deutsches Recht. Gerichtsstand ist, soweit zulässig, Berlin. Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit der übrigen unberührt.</p>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+  </main>
+  
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__container">
+        <div class="footer__column">
+          <a href="/" class="footer__logo">
+            <span class="highlight">Bank</span>Detektiv
+          </a>
+          <p class="footer__desc">
+            BankDetektiv hilft dir, unbekannte<br>
+            Abbuchungen auf deinem Kontoauszug<br>
+            zu identifizieren und zu verstehen.
+          </p>
+          <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank" rel="noopener noreferrer">
+            www.wasistdasfüreineabbuchung.de
+          </a>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Links</h4>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Wissen</h4>
+          <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Rechtliches</h4>
+          <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+        <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank" rel="noopener noreferrer">whatsthatcharge.com</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

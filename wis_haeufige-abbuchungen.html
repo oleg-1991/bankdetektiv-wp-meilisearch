@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Häufige Abbuchungen – BankDetektiv</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo"><span class="highlight">Bank</span>Detektiv</a>
+
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+
+          <div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="wissen-menu" type="button">
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- mobile -->
+  <div class="mobile-overlay"></div>
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+
+  <main>
+    <!-- HERO + Meta -->
+    <section class="article-sec" id="hero">
+      <div class="container">
+        <div class="article__container">
+          <a href="/wissen" class="backlink">← Zurück zum Wissensbereich</a>
+
+          <h1 class="article__title">Häufige Abbuchungen erklärt</h1>
+          <p class="article__text">
+            Hier findest du die gängigsten Buchungstexte/Descriptors auf Kontoauszügen,
+            was dahinter steckt und was du im Zweifel tun solltest.
+          </p>
+
+
+          <div class="article__meta">
+            <div class="meta__item">
+              <!-- clock -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+              <span>Lesedauer: 8 Minuten</span>
+            </div>
+          
+            <div class="meta__item">
+              <!-- file-text -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+              </svg>
+              <span>Zuletzt aktualisiert: September 2025</span>
+            </div>
+          
+            <div class="meta__item">
+              <!-- shield -->
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>Expertenwissen</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Hinweis -->
+    <section class="article-sec">
+      <div class="container">
+        <div class="article__container">
+          <div class="notice">
+            <svg class="notice__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 7v6m0 4h.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <div class="notice__title">Hinweis</div>
+              <p class="notice__text">
+                Der Text auf dem Auszug (Descriptor) kann je nach Bank/Anbieter leicht variieren.
+                Vergleiche Datum/Betrag mit deinen Verträgen oder App-Abos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabelle: häufige Deskriptoren -->
+    <section class="article-sec" id="liste">
+      <div class="container">
+        <div class="article__container">
+          <h2 class="article__h2">Top-Abbuchungen im Überblick</h2>
+
+          <div class="table-card">
+            <div class="table-scroll">
+              <table class="abb__table">
+                <thead>
+                  <tr>
+                    <th>Descriptor (Auszug-Text)</th>
+                    <th>Unternehmen</th>
+                    <th>Worum geht’s?</th>
+                    <th>Risiko</th>
+                    <th>Was tun?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="abb__type">PAYPAL *XYZ</td>
+                    <td>PayPal</td>
+                    <td class="abb__desc">Weitergeleitete Kartenzahlung/Kauf über PayPal</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">In der PayPal-App Transaktion prüfen; Konfliktfall dort melden</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">GOOGLE*YouTube / GOOGLE*Play</td>
+                    <td>Google</td>
+                    <td class="abb__desc">Abo (z. B. YouTube Premium) oder In-App-Kauf</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">Im Google-Konto → Zahlungen &amp; Abos prüfen/kündigen</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">APPLE.COM/BILL</td>
+                    <td>Apple</td>
+                    <td class="abb__desc">App-Store/Apple-Dienst Abo oder Kauf</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">Einstellungen → Apple-ID → Abonnements</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">SPOTIFY</td>
+                    <td>Spotify</td>
+                    <td class="abb__desc">Musik-Abo</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">spotify.com/account → Abo verwalten/kündigen</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">NETFLIX.COM</td>
+                    <td>Netflix</td>
+                    <td class="abb__desc">Streaming-Abo</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">Konto → Mitgliedschaft kündigen oder Zahlungsmittel prüfen</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">AMAZON PAYMENTS / AMZN</td>
+                    <td>Amazon</td>
+                    <td class="abb__desc">Bestellung/Prime-Mitgliedschaft</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">Bestellübersicht/Prime verwalten auf amazon.de</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">MICROSOFT*XBOX / MICROSOFT</td>
+                    <td>Microsoft</td>
+                    <td class="abb__desc">Xbox Game Pass/Office-Abo, In-App-Käufe</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">account.microsoft.com → Zahlungen &amp; Abos</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">UBER TRIP HELP.UBER.COM</td>
+                    <td>Uber</td>
+                    <td class="abb__desc">Fahrt/Servicegebühr/Trinkgeld</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">Quittung in der App prüfen; Support kontaktieren</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">SHELL / ARAL / ESSO</td>
+                    <td>Tankstellen</td>
+                    <td class="abb__desc">Kraftstoff/Shop – teils Vorautorisierung</td>
+                    <td><span class="risk-badge risk-badge--low">Niedrig</span></td>
+                    <td class="abb__desc">Endbetrag nach 1–3 Tagen abwarten; Bon vergleichen</td>
+                  </tr>
+                  <tr>
+                    <td class="abb__type">UNBEKANNTE LASTSCHRIFT</td>
+                    <td>—</td>
+                    <td class="abb__desc">Nicht zuordenbare SEPA-Einzug</td>
+                    <td><span class="risk-badge risk-badge--high">Hoch</span></td>
+                    <td class="abb__desc">Mandat prüfen; ggf. Lastschrift zurückgeben (8-Wochen-Frist)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Was tun, wenn unklar -->
+    <section class="article-sec" id="was-tun">
+      <div class="container">
+        <div class="article__container">
+          <h2 class="article__h2">Abbuchung unklar? So gehst du vor</h2>
+          <div class="steps">
+            <div class="step">
+              <div class="step__num">1</div>
+              <div>
+                <div class="step__title">Datum & Betrag abgleichen</div>
+                <p class="step__text">Mit Bestellbestätigungen/Abos vergleichen; Vorautorisierungen beachten.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__num">2</div>
+              <div>
+                <div class="step__title">Descriptor googeln oder in Apps prüfen</div>
+                <p class="step__text">Im jeweiligen Konto (Apple/Google/PayPal usw.) nachsehen.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__num">3</div>
+              <div>
+                <div class="step__title">Bei Verdacht: Karte/App sperren</div>
+                <p class="step__text">Sofortmaßnahme und <a class="link" href="/wissen/sicherheit#notfall">Notfall-Check</a> durchführen.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step__num">4</div>
+              <div>
+                <div class="step__title">SEPA-Lastschrift zurückgeben</div>
+                <p class="step__text">Innerhalb von 8&nbsp;Wochen (13&nbsp;Monate bei nicht autorisiert).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Related -->
+    <section class="article-sec related">
+      <div class="container">
+        <div class="article__container">
+          <div class="related-box">
+            <h2 class="article__h2">Weiterführend</h2>
+            <div class="related__grid">
+              <a href="/wissen/abbuchungen" class="related__card">
+                <h3 class="related__title">Abbuchungen verstehen</h3>
+                <p class="related__desc">Grundlagen, Mandate, Rückgaben</p>
+              </a>
+              <a href="/wissen/sicherheit" class="related__card">
+                <h3 class="related__title">Sicherheit beim Banking</h3>
+                <p class="related__desc">Phishing erkennen &amp; Notfallplan</p>
+              </a>
+              <a href="/wissen/bankgebuehren" class="related__card">
+                <h3 class="related__title">Bankgebühren Guide</h3>
+                <p class="related__desc">Kosten verstehen &amp; senken</p>
+              </a>
+              <a href="/kontakt" class="related__card">
+                <h3 class="related__title">Individuelle Frage?</h3>
+                <p class="related__desc">Schreibe unserem Team</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__container">
+        <div class="footer__column">
+          <a href="/" class="footer__logo"><span class="highlight">Bank</span>Detektiv</a>
+          <p class="footer__desc">BankDetektiv hilft dir, unbekannte<br>Abbuchungen zu identifizieren.</p>
+          <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank">
+            www.wasistdasfüreineabbuchung.de
+          </a>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__heading">Links</h4>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__heading">Wissen</h4>
+          <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+          </ul>
+        </div>
+        <div class="footer__column">
+          <h4 class="footer__heading">Rechtliches</h4>
+          <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+        <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank">whatsthatcharge.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

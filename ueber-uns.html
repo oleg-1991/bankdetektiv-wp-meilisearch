@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Über uns – BankDetektiv</title>
+  <meta name="description" content="BankDetektiv – weil du wissen solltest, wofür du zahlst. Wir machen Schluss mit Fragezeichen auf dem Kontoauszug." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <div class="navbar__container">
+        <a href="/" class="logo">
+          <span class="highlight">Bank</span>Detektiv
+        </a>
+
+        <!-- Десктоп-меню -->
+        <nav class="nav-desktop">
+          <a href="/" class="nav-link">Startseite</a>
+
+          <div class="nav-dropdown">
+            <button
+              class="nav-link dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="wissen-menu"
+              type="button"
+            >
+              Wissen <span class="caret" aria-hidden="true">▾</span>
+            </button>
+
+            <div id="wissen-menu" class="dropdown-menu" hidden>
+              <a href="/wissen" class="dropdown-main">
+                <strong>Wissensbereich</strong><br />
+                <span>Alles was du über Bankabbuchungen wissen musst</span>
+              </a>
+              <a href="/wissen/abbuchungen">Abbuchungen verstehen</a>
+              <a href="/wissen/bankgebuehren">Bankgebühren Guide</a>
+              <a href="/wissen/sicherheit">Sicherheit beim Banking</a>
+              <a href="/wissen/haeufige-abbuchungen">Häufige Abbuchungen</a>
+            </div>
+          </div>
+
+          <a href="/ueber-uns" class="nav-link">Über uns</a>
+          <a href="/faq" class="nav-link">FAQ</a>
+          <a href="/kontakt" class="nav-link">Kontakt</a>
+        </nav>
+
+        <!-- Бургер -->
+        <button class="menu-btn" aria-label="Menü öffnen" aria-controls="mobile-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Затемнение фона для моб.меню -->
+  <div class="mobile-overlay"></div>
+  <!-- Мобильное меню -->
+  <nav id="mobile-nav" class="nav-mobile">
+    <a href="/" class="nav-link">Startseite</a>
+
+    <div class="nav-mobile__group">
+      <div class="nav-mobile__label">Wissen</div>
+      <a href="/wissen" class="nav-link">Wissensbereich</a>
+      <a href="/wissen/abbuchungen" class="nav-link">Abbuchungen verstehen</a>
+      <a href="/wissen/bankgebuehren" class="nav-link">Bankgebühren Guide</a>
+      <a href="/wissen/sicherheit" class="nav-link">Sicherheit beim Banking</a>
+      <a href="/wissen/haeufige-abbuchungen" class="nav-link">Häufige Abbuchungen</a>
+    </div>
+
+    <a href="/ueber-uns" class="nav-link">Über uns</a>
+    <a href="/faq" class="nav-link">FAQ</a>
+    <a href="/kontakt" class="nav-link">Kontakt</a>
+  </nav>
+
+  
+  <main>
+    <!-- HERO -->
+    <section class="about">
+      <div class="container">
+        <div class="about__container">
+          <h1 class="about__title">Über uns</h1>
+          <p class="about__lead">
+            BankDetektiv – weil du wissen solltest, wofür du zahlst.<br>
+            Wir machen Schluss mit Fragezeichen auf dem Kontoauszug.
+          </p>
+
+          <!-- Плейсхолдер под изображение команды (заменить на <img>) -->
+          <figure class="about__media">
+            <img class="about__img" src="images/team.png" alt="Platzhalter für Teamfoto">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- История -->
+    <section class="about-sec">
+      <div class="container">
+        <div class="about__container">
+          <p class="about__text">
+            BankDetektiv – entstanden aus einem persönlichen Aha-Moment: Sebastian, mit über 15 Jahren
+            Erfahrung in der Banken- und FinTech-Welt, stieß eines Tages auf eine mysteriöse Abbuchung
+            auf seinem Konto. Trotz stundenlanger Recherche blieb unklar, worum es sich handelte.
+            Da wurde ihm klar: So kann das nicht weitergehen. Es braucht eine Lösung, die jeder versteht –
+            und die endlich Licht in komplizierte Transaktionen bringt.
+          </p>
+          <p class="about__text">
+            Gemeinsam mit Lara, die komplexe Finanzthemen verständlich und sympathisch auf den Punkt bringt,
+            und Jian-Yang, dem Tech-Mastermind, der selbst den kryptischsten Buchungscode knackt,
+            wurde aus der Idee eine klare Mission.
+          </p>
+          <p class="about__text">
+            Heute unterstützt BankDetektiv Menschen in ganz Deutschland dabei, ihre Kontoauszüge auf einen Blick
+            zu verstehen, verdächtige Abbuchungen zu erkennen – und die Kontrolle über ihre Finanzen
+            zurückzugewinnen: verständlich, digital und mit einem echten Team an ihrer Seite.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission -->
+    <section class="about-sec">
+      <div class="container">
+        <div class="about__container">
+          <div class="about__cta-card">
+            <h2 class="about__cta-title">Unsere Mission</h2>
+            <p class="about__cta-text">
+              BankDetektiv – weil du wissen solltest, wofür du zahlst.<br>
+              Wir machen Schluss mit Fragezeichen auf dem Kontoauszug.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise -->
+    <section class="about-sec">
+      <div class="container">
+        <div class="about__container">
+          <h2 class="about__h2">Unsere Expertise</h2>
+
+          <div class="about__grid">
+            <article class="about__card">
+              <h3 class="about__card-title">Banking Know-how</h3>
+              <p class="about__card-text">
+                Unser Team besteht aus Experten mit jahrelanger Erfahrung im Bankensektor,
+                die die Systeme hinter Abbuchungsbezeichnungen verstehen.
+              </p>
+            </article>
+
+            <article class="about__card">
+              <h3 class="about__card-title">Tech-Innovation</h3>
+              <p class="about__card-text">
+                Wir nutzen moderne Technologien, um unsere Datenbank kontinuierlich zu erweitern
+                und zu verbessern.
+              </p>
+            </article>
+
+            <article class="about__card">
+              <h3 class="about__card-title">Verbraucherschutz</h3>
+              <p class="about__card-text">
+                Unser Fokus liegt darauf, Verbraucher:innen die Kontrolle über ihre Finanzen
+                zurückzugeben und vor betrügerischen Abbuchungen zu schützen.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__container">
+        <div class="footer__column">
+          <a href="/" class="footer__logo">
+            <span class="highlight">Bank</span>Detektiv
+          </a>
+          <p class="footer__desc">
+            BankDetektiv hilft dir, unbekannte<br>
+            Abbuchungen auf deinem Kontoauszug<br>
+            zu identifizieren und zu verstehen.
+          </p>
+          <a href="https://www.wasistdasfüreineabbuchung.de" class="footer__link" target="_blank" rel="noopener noreferrer">
+            www.wasistdasfüreineabbuchung.de
+          </a>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Links</h4>
+          <ul class="footer__list">
+            <li><a href="/" class="footer__link">Startseite</a></li>
+            <li><a href="/ueber-uns" class="footer__link">Über uns</a></li>
+            <li><a href="/faq" class="footer__link">FAQ</a></li>
+            <li><a href="/kontakt" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Wissen</h4>
+          <ul class="footer__list">
+            <li><a href="/wissen" class="footer__link">Wissensbereich</a></li>
+            <li><a href="/wissen/abbuchungen" class="footer__link">Abbuchungen verstehen</a></li>
+            <li><a href="/wissen/bankgebuehren" class="footer__link">Bankgebühren Guide</a></li>
+            <li><a href="/wissen/sicherheit" class="footer__link">Sicherheit beim Banking</a></li>
+            <li><a href="/wissen/haeufige-abbuchungen" class="footer__link">Häufige Abbuchungen</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4 class="footer__heading">Rechtliches</h4>
+          <ul class="footer__list">
+            <li><a href="/datenschutz" class="footer__link">Datenschutz</a></li>
+            <li><a href="/impressum" class="footer__link">Impressum</a></li>
+            <li><a href="/agb" class="footer__link">AGB</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2025 BankDetektiv. Alle Rechte vorbehalten.</p>
+        <p class="footer__note">Inspiriert von <a href="https://www.whatsthatcharge.com" target="_blank" rel="noopener noreferrer">whatsthatcharge.com</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
